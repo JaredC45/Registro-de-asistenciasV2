@@ -25,6 +25,13 @@ namespace Trabajo1
                     return Result * 100;
                 }
 
+                public static bool MinAsistencia()
+                {
+                    if (CalcAsistencia() >= 75)
+                        return true;
+                    else
+                        return false;
+                }
             }
         }
     }
