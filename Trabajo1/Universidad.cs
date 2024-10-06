@@ -17,6 +17,15 @@ namespace Trabajo1
             //SesionesA = Sesiones Asistidas 
             public static double SesionesA { get; set; }
 
+            internal class Asistencia
+            {
+                public static double CalcAsistencia()
+                {
+                    double Result = SesionesA / SesionesT;
+                    return Result * 100;
+                }
+
+            }
         }
     }
 }
