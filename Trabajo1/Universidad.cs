@@ -32,6 +32,10 @@ namespace Trabajo1
                     else
                         return false;
                 }
+                public static void PrintMetodo()
+                {
+                    Console.WriteLine($"Nombre: {Nombre}, Sesiones Asistidas: {SesionesA}, Sesiones Totales: {SesionesT}, Porcentaje Asistencia: {CalcAsistencia()}%, Aprobado?: {MinAsistencia()}");
+                }
             }
         }
     }
