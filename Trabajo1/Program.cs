@@ -18,6 +18,12 @@ namespace tarea1
                 Universidad.Estudiante.SesionesT = Convert.ToInt32(Console.ReadLine());
             } while (Universidad.Estudiante.SesionesT <= 0);
 
+            do
+            {
+                Console.WriteLine($"Ingrese el numero de asistencias de: {Universidad.Estudiante.Nombre}");
+                Universidad.Estudiante.SesionesA = Convert.ToInt32(Console.ReadLine());
+            } while (Universidad.Estudiante.SesionesA < 0);
+
             Universidad.Estudiante.Asistencia.PrintMetodo();
         }
     }
